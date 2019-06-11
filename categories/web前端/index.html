@@ -100,18 +100,14 @@
 
 
 
-  <meta name="description" content="NexT User Docs – NexT Supported Tags">
-<meta name="keywords" content="Coripple">
+  <meta name="keywords" content="Coripple">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tag Plugins">
-<meta property="og:url" content="https://viscode.com/docs/tag-plugins/index.html">
+<meta property="og:title" content="Coripple">
+<meta property="og:url" content="https://viscode.com/categories/web前端/index.html">
 <meta property="og:site_name" content="Coripple">
-<meta property="og:description" content="NexT User Docs – NexT Supported Tags">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-06-10T09:20:12.904Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tag Plugins">
-<meta name="twitter:description" content="NexT User Docs – NexT Supported Tags">
+<meta name="twitter:title" content="Coripple">
 
 
 
@@ -119,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://viscode.com/docs/tag-plugins/">
+  <link rel="canonical" href="https://viscode.com/categories/web前端/">
 
 
 
@@ -129,7 +125,7 @@
   };
 </script>
 
-  <title>Tag Plugins | Coripple</title>
+  <title>Category: web前端 | Coripple</title>
   
 
 
@@ -175,7 +171,7 @@
   
   
 
-  <div class="container page-post-detail">
+  <div class="container ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -326,147 +322,57 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
-
-<h2 class="post-title" itemprop="name headline">Tag Plugins<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGFnLXBsdWdpbnMvaW5kZXgubWQ=" title="Edit this post"><i class="fa fa-pencil"></i></span>
-
-</h2>
-
-<div class="post-meta">
-  
-    <div class="post-description">NexT User Docs – NexT Supported Tags</div>
   
   
-
-
   
-  
-  <ul class="breadcrumb">
-    
-      
-      
-        
-          
-            
-          
-          
-            <li><a href="/docs/">DOCS</a></li>
-          
-        
-      
-    
-      
-      
-        
-          <li>TAG-PLUGINS</li>
-        
-      
-    
-      
-      
-    
-  </ul>
+  <div class="post-block category">
 
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          <p>Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdGFnLXBsdWdpbnM=" title="https://hexo.io/docs/tag-plugins">Hexo has a lot of tags<i class="fa fa-external-link"></i></span> which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags is provided by NexT:</p>
-<ul>
-<li><a href="#Centered-Quote">Centered Quote</a></li>
-<li><a href="#Include-Raw">Include Raw</a></li>
-<li><a href="/docs/tag-plugins/button">Button</a></li>
-<li><a href="/docs/tag-plugins/full-image">Full Image</a></li>
-<li><a href="/docs/tag-plugins/group-pictures">Group Pictures</a></li>
-<li><a href="/docs/tag-plugins/label">Label</a></li>
-<li><a href="/docs/tag-plugins/mermaid">Mermaid</a></li>
-<li><a href="/docs/tag-plugins/note">Note</a></li>
-<li><a href="/docs/tag-plugins/pdf">PDF</a></li>
-<li><a href="/docs/tag-plugins/tabs">Tabs</a></li>
-<li><a href="/docs/tag-plugins/video">Video</a></li>
-</ul>
-<h3 id="Centered-Quote"><a href="#Centered-Quote" class="headerlink" title="Centered Quote"></a>Centered Quote</h3><p>This tag will make a quote with two lines before and after it, and text quoted will be centered. When using centered quote, if we have multi-line text, and each line has a different length, the quote won&#39;t be symmetrical, so it&#39;s recommended to use when only have single line text. For example before article all after article to make a summary.</p>
-<h4 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h4><figure class="highlight html"><figcaption><span>center-quote.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;Something&#123;% endcenterquote %&#125;</span><br><span class="line"><span class="comment">&lt;!-- Tag Alias --&gt;</span></span><br><span class="line">&#123;% cq %&#125;Something&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;Elegant in code, simple in core&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
-<blockquote class="blockquote-center"><p>Elegant in code, simple in core</p>
-</blockquote>
-<h3 id="Include-Raw"><a href="#Include-Raw" class="headerlink" title="Include Raw"></a>Include Raw</h3><p>This tag include any raw content into your posts. Path is relative to your site source directory.</p>
-<h4 id="Usage-1"><a href="#Usage-1" class="headerlink" title="Usage"></a>Usage</h4><figure class="highlight html"><figcaption><span>include-raw.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% include_raw '_data/path/to/file.html' %&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example"></a>Example</h4><p>Let&#39;s create <code>include-raw.html</code> file in <code>_data</code> directory under <span class="label info">site root directory</span> with following content:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">Any <span class="tag">&lt;<span class="name">strong</span>&gt;</span>raw content<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> may be included with this tag.</span><br></pre></td></tr></table></figure>
-<p>Then in any post we can use this content with <code>include_raw</code> tag:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% include<span class="emphasis">_raw '_</span>data/path/to/include-raw.html' %&#125;</span><br></pre></td></tr></table></figure>
-Any <strong>raw content</strong> may be included with this tag.
-
-        
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h2>web前端<small>Category</small>
+        </h2>
       </div>
+
       
-      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
+          <a class="post-title-link" href="/pub/Hexo-Github-Page博客搭建教程/" itemprop="url">
+            
+              <span itemprop="name">Hexo + Github Page博客搭建教程</span>
+            
+          </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-10T18:26:53Z" content="2019-06-10">
+          06-10
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
 
-
-  
-  
-  <ul class="breadcrumb">
-    
-      
-      
-        
-          
-            
-          
-          
-            <li><a href="/docs/">DOCS</a></li>
-          
-        
-      
-    
-      
-      
-        
-          <li>TAG-PLUGINS</li>
-        
-      
-    
-      
-      
-    
-  </ul>
-
-
-    
-    
-    
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -486,17 +392,8 @@ Any <strong>raw content</strong> may be included with this tag.
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -593,23 +490,6 @@ Any <strong>raw content</strong> may be included with this tag.
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Centered-Quote"><span class="nav-number">1.</span> <span class="nav-text">Centered Quote</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage"><span class="nav-number">1.1.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example"><span class="nav-number">1.2.</span> <span class="nav-text">Example</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Include-Raw"><span class="nav-number">2.</span> <span class="nav-text">Include Raw</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-1"><span class="nav-number">2.1.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-1"><span class="nav-number">2.2.</span> <span class="nav-text">Example</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -749,10 +629,6 @@ Any <strong>raw content</strong> may be included with this tag.
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.2"></script>
-<script src="/js/post-details.js?v=7.1.2"></script>
-
-
 
   
 
@@ -782,47 +658,9 @@ Any <strong>raw content</strong> may be included with this tag.
 </script>
 
 
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://viscode.com/docs/tag-plugins/index.html";
-    this.page.identifier = "docs/tag-plugins/index.html";
-    this.page.title = 'Tag Plugins';
-    this.language = 'en';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theme-next.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    $(function() {
-      var offsetTop = $('#comments').offset().top - $(window).height();
-      if (offsetTop <= 0) {
-        // load directly when there's no a scrollbar
-        window.addEventListener('load', loadComments, false);
-      } else {
-        $(window).on('scroll.disqus_scroll', function() {
-          // offsetTop may changes because of manually resizing browser window or lazy loading images.
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          var scrollTop = $(window).scrollTop();
-
-          // pre-load comments a bit? (margin or anything else)
-          if (offsetTop - scrollTop < 60) {
-            $(window).off('.disqus_scroll');
-            loadComments();
-          }
-        });
-      }
-    });
-  
-</script>
 
 
 
-
-
-  
 
 
   
