@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-06-11 05:21:40" itemprop="dateModified" datetime="2019-06-11T05:21:40Z">2019-06-11</time>
+                <time title="Modified: 2019-06-11 06:10:12" itemprop="dateModified" datetime="2019-06-11T06:10:12Z">2019-06-11</time>
               
             
           </span>
@@ -455,24 +455,24 @@
       
         
           
-            <h1 id="Hexo-Github-Page博客搭建教"><a href="#Hexo-Github-Page博客搭建教" class="headerlink" title="Hexo-Github-Page博客搭建教"></a>Hexo-Github-Page博客搭建教</h1><h2 id="1-在Github创建一个新项目-命名为-github-co"><a href="#1-在Github创建一个新项目-命名为-github-co" class="headerlink" title="1. 在Github创建一个新项目, 命名为.github.co"></a>1. 在Github创建一个新项目, 命名为<username>.github.co</username></h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#官方文档</span></span><br><span class="line">https://help.github.com/en/articles/configuring-a-publishing-source-<span class="keyword">for</span>-github-pages</span><br></pre></td></tr></table></figure>
+            <h1 id="Hexo-Github-Page博客搭建教"><a href="#Hexo-Github-Page博客搭建教" class="headerlink" title="Hexo-Github-Page博客搭建教"></a>Hexo-Github-Page博客搭建教</h1><h2 id="在Github创建一个新项目-命名为-github-co"><a href="#在Github创建一个新项目-命名为-github-co" class="headerlink" title="在Github创建一个新项目, 命名为.github.co"></a>在Github创建一个新项目, 命名为<username>.github.co</username></h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#官方文档</span></span><br><span class="line">https://help.github.com/en/articles/configuring-a-publishing-source-<span class="keyword">for</span>-github-pages</span><br></pre></td></tr></table></figure>
 <p><img src="/images/posts/2019/06/create_repository.png" alt="create repository"></p>
-<h2 id="2-选择主题"><a href="#2-选择主题" class="headerlink" title="2. 选择主题"></a>2. 选择主题</h2><p><img src="/images/posts/2019/06/choose_theme.png" alt="create repository"></p>
+<h2 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h2><p><img src="/images/posts/2019/06/choose_theme.png" alt="create repository"></p>
 <p><img src="/images/posts/2019/06/select_theme.png" alt="create repository"></p>
-<h2 id="3-查看主页-github-co"><a href="#3-查看主页-github-co" class="headerlink" title="3. 查看主页.github.co"></a>3. 查看主页<username>.github.co</username></h2><p><img src="/images/posts/2019/06/new_page.png" alt="create repository"></p>
-<h2 id="4-关联域名"><a href="#4-关联域名" class="headerlink" title="4. 关联域名"></a>4. 关联域名</h2><p>首先域名注册商设置CNAME指向<username>.github.co</username></p>
+<h2 id="查看主页-github-co"><a href="#查看主页-github-co" class="headerlink" title="查看主页.github.co"></a>查看主页<username>.github.co</username></h2><p><img src="/images/posts/2019/06/new_page.png" alt="create repository"></p>
+<h2 id="关联域名"><a href="#关联域名" class="headerlink" title="关联域名"></a>关联域名</h2><p>首先域名注册商设置CNAME指向<username>.github.co</username></p>
 <p>然后设置github项目设置中进行关联</p>
 <p><img src="/images/posts/2019/06/domain.png" alt="create repository"></p>
-<h2 id="5-安装hexo"><a href="#5-安装hexo" class="headerlink" title="5. 安装hexo"></a>5. 安装hexo</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#官方网站</span><br><span class="line">https://hexo.io/zh-cn/index.html</span><br></pre></td></tr></table></figure>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#官方网站</span><br><span class="line">https://hexo.io/zh-cn/index.html</span><br></pre></td></tr></table></figure>
 <p>安装</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<h2 id="6-手动部署"><a href="#6-手动部署" class="headerlink" title="6. 手动部署"></a>6. 手动部署</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入hexo博客目录</span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">rm -rf pub public  <span class="comment">#public 是hexo生成，pub用于手动部署</span></span><br><span class="line">hexo g						 <span class="comment">#hexo generate，生成到public</span></span><br><span class="line">mkdir pub					 <span class="comment">#临时目录</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/coripple/coripple.github.io pub/code <span class="comment">#github page</span></span><br><span class="line">mkdir pub/pub</span><br><span class="line"><span class="comment"># 必须的文件</span></span><br><span class="line">cp -r pub/code/.git* pub/pub/</span><br><span class="line">cp -r pub/code/_config.yml pub/pub/</span><br><span class="line">cp -r pub/code/CNAME pub/pub/</span><br><span class="line">cp -r pub/code/README.md pub/pub/</span><br><span class="line"><span class="comment"># hexo 生成的新文件</span></span><br><span class="line">cp -r public/* pub/pub/</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> pub/pub</span><br><span class="line">git add -A</span><br><span class="line">git commit -m<span class="string">"update"</span></span><br><span class="line">git push origin master</span><br><span class="line">rm -rf pub</span><br></pre></td></tr></table></figure>
+<h2 id="手动部署"><a href="#手动部署" class="headerlink" title="手动部署"></a>手动部署</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入hexo博客目录</span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">rm -rf pub public  <span class="comment">#public 是hexo生成，pub用于手动部署</span></span><br><span class="line">hexo g						 <span class="comment">#hexo generate，生成到public</span></span><br><span class="line">mkdir pub					 <span class="comment">#临时目录</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/coripple/coripple.github.io pub/code <span class="comment">#github page</span></span><br><span class="line">mkdir pub/pub</span><br><span class="line"><span class="comment"># 必须的文件</span></span><br><span class="line">cp -r pub/code/.git* pub/pub/</span><br><span class="line">cp -r pub/code/_config.yml pub/pub/</span><br><span class="line">cp -r pub/code/CNAME pub/pub/</span><br><span class="line">cp -r pub/code/README.md pub/pub/</span><br><span class="line"><span class="comment"># hexo 生成的新文件</span></span><br><span class="line">cp -r public/* pub/pub/</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> pub/pub</span><br><span class="line">git add -A</span><br><span class="line">git commit -m<span class="string">"update"</span></span><br><span class="line">git push origin master</span><br><span class="line">rm -rf pub</span><br></pre></td></tr></table></figure>
 <p>Hexo配置文件也提供了部署方法。</p>
 <p>可以参考</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https://www.jianshu.com/p/ef07bdcde72e</span><br></pre></td></tr></table></figure>
 <p><strong>注意不要覆盖掉github.io初始化的几个文件</strong></p>
 <p><img src="/images/posts/2019/06/files.png" alt="create repository"></p>
-<h2 id="7-hexo主题-next"><a href="#7-hexo主题-next" class="headerlink" title="7. hexo主题 next"></a>7. hexo主题 next</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#网站</span><br><span class="line">https://theme-next.org/</span><br></pre></td></tr></table></figure>
+<h2 id="hexo主题-next"><a href="#hexo主题-next" class="headerlink" title="hexo主题 next"></a>hexo主题 next</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#网站</span><br><span class="line">https://theme-next.org/</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd blog</span><br><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>修改配置文件_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">`theme: next`</span><br></pre></td></tr></table></figure>
@@ -481,9 +481,9 @@
 <p>再进行部署</p>
 <p>默认的主题是</p>
 <p><img src="/images/posts/2019/06/muse.png" alt="create repository"></p>
-<h2 id="8-另外一个样式"><a href="#8-另外一个样式" class="headerlink" title="8. 另外一个样式"></a>8. 另外一个样式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 已经是一个完整的blog，省略5，7 两个步骤</span><br><span class="line">https://github.com/theme-next/theme-next.org</span><br></pre></td></tr></table></figure>
+<h2 id="另外一个样式"><a href="#另外一个样式" class="headerlink" title="另外一个样式"></a>另外一个样式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 已经是一个完整的blog，省略5，7 两个步骤</span><br><span class="line">https://github.com/theme-next/theme-next.org</span><br></pre></td></tr></table></figure>
 <p><img src="/images/posts/2019/06/next_web.png" alt="create repository"></p>
-
+<h1 id><a href="#" class="headerlink" title=" "></a> </h1>
           
         
       
