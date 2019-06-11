@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="yandex-verification" content="3ac9ae36ddebb425">
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"onmobile":true},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="NexT User Docs – Third-party Service Integration – Statistics and Analytics">
+<meta name="keywords" content="Coripple">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Statistics and Analytics">
+<meta property="og:url" content="https://viscode.com/docs/third-party-services/statistics-and-analytics.html">
+<meta property="og:site_name" content="Coripple">
+<meta property="og:description" content="NexT User Docs – Third-party Service Integration – Statistics and Analytics">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://viscode.com/images/docs/analytics-baidu-id.png">
+<meta property="og:updated_time" content="2019-06-10T09:20:12.894Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Statistics and Analytics">
+<meta name="twitter:description" content="NexT User Docs – Third-party Service Integration – Statistics and Analytics">
+<meta name="twitter:image" content="https://viscode.com/images/docs/analytics-baidu-id.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://viscode.com/docs/third-party-services/statistics-and-analytics">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Statistics and Analytics | Coripple</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Coripple</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Coripple's Blog</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-news">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-bullhorn"></i> <br>News</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">2</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+    
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">Statistics and Analytics<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGhpcmQtcGFydHktc2VydmljZXMvc3RhdGlzdGljcy1hbmQtYW5hbHl0aWNzLm1k" title="Edit this post"><i class="fa fa-pencil"></i></span>
+
+</h2>
+
+<div class="post-meta">
+  
+    <div class="post-description">NexT User Docs – Third-party Service Integration – Statistics and Analytics</div>
+  
+  
+
+
+  
+  
+  <ul class="breadcrumb">
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/">DOCS</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/third-party-services/">THIRD-PARTY-SERVICES</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li>STATISTICS-AND-ANALYTICS</li>
+          
+        
+      
+    
+  </ul>
+
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h3 id="Analytics-Tools"><a href="#Analytics-Tools" class="headerlink" title="Analytics Tools"></a>Analytics Tools</h3><h4 id="Google-Analytics"><a href="#Google-Analytics" class="headerlink" title="Google Analytics"></a>Google Analytics</h4><ol>
+<li>Create an account and log into <span class="exturl" data-url="aHR0cHM6Ly9hbmFseXRpY3MuZ29vZ2xlLmNvbQ==" title="https://analytics.google.com">Google Analytics<i class="fa fa-external-link"></i></span>. <span class="exturl" data-url="aHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vYW5hbHl0aWNzLz9obD1lbiN0b3BpYz0zNTQ0OTA2" title="https://support.google.com/analytics/?hl=en#topic=3544906">More detailed documentation<i class="fa fa-external-link"></i></span></li>
+<li>Edit <span class="label primary">theme config file</span> and fill <code>tracking_id</code> under  section <code>google_analytics</code> with your Google track ID. Google track ID always starts with <code>UA-</code>. <figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Google Analytics</span></span><br><span class="line"><span class="attr">google_analytics:</span></span><br><span class="line"><span class="attr">  tracking_id:</span> <span class="string">UA-XXXXXXXX-X</span></span><br><span class="line"><span class="attr">  localhost_ignored:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>when field <code>localhost_ignore</code> is set to true, NexT will not send record to google analytics, as long as page request has &quot;localhost&quot; as its host name. This will prevent local debugging from polluting analytics. Set <code>localhost_ignore</code> to disable it.</p>
+<h4 id="Azure-Application-Insights"><a href="#Azure-Application-Insights" class="headerlink" title="Azure Application Insights"></a>Azure Application Insights</h4><ol>
+<li>Create an account and log into <span class="exturl" data-url="aHR0cHM6Ly9wb3J0YWwuYXp1cmUuY29tLw==" title="https://portal.azure.com/">Application Insights<i class="fa fa-external-link"></i></span>. <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvYXp1cmUvYXBwbGljYXRpb24taW5zaWdodHMvYXBwLWluc2lnaHRzLWNyZWF0ZS1uZXctcmVzb3VyY2U=" title="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource">More detailed documentation<i class="fa fa-external-link"></i></span></li>
+<li>Edit <span class="label primary">theme config file</span> and change section <code>application_insights</code> to your instrumentation key. <figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Application Insights</span></span><br><span class="line"><span class="attr">application_insights:</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="Baidu-Analytics-China"><a href="#Baidu-Analytics-China" class="headerlink" title="Baidu Analytics (China)"></a>Baidu Analytics (China)</h4><div class="tabs" id="baidu-analytics"><ul class="nav-tabs"><li class="tab active"><a href="#baidu-analytics-1">Login →</a></li><li class="tab"><a href="#baidu-analytics-2">Script ID →</a></li><li class="tab"><a href="#baidu-analytics-3">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="baidu-analytics-1"><p>Login to <span class="exturl" data-url="aHR0cDovL3RvbmdqaS5iYWlkdS5jb20=" title="http://tongji.baidu.com">Baidu Analytics<i class="fa fa-external-link"></i></span> and locate to site code getting page.</p></div><div class="tab-pane" id="baidu-analytics-2"><p>Copy the script ID after <code>hm.js?</code>, like the following picture:<br>   <img src="/images/docs/analytics-baidu-id.png" alt="NexT Baidu Analytics"></p></div><div class="tab-pane" id="baidu-analytics-3"><p>Edit <span class="label primary">theme config file</span> and change section <code>baidu_analytics</code> to your script ID.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Baidu Analytics ID</span></span><br><span class="line"><span class="attr">baidu_analytics:</span> <span class="string">your_id</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h4 id="Tencent-Analytics-China"><a href="#Tencent-Analytics-China" class="headerlink" title="Tencent Analytics (China)"></a>Tencent Analytics (China)</h4><ol>
+<li>Please login to <span class="exturl" data-url="aHR0cDovL3RhLnFxLmNvbQ==" title="http://ta.qq.com">Tencent Analytics<i class="fa fa-external-link"></i></span> and get your ID.</li>
+<li><p>Then put it into <code>tencent_analytics</code> section of <span class="label primary">theme config file</span>.</p>
+ <figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Tencent analytics ID</span></span><br><span class="line"><span class="attr">tencent_analytics:</span> <span class="string">your_id</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="Tencent-Mobile-Analytics-China"><a href="#Tencent-Mobile-Analytics-China" class="headerlink" title="Tencent Mobile Analytics (China)"></a>Tencent Mobile Analytics (China)</h4><ol>
+<li>Create an account and log into <span class="exturl" data-url="aHR0cHM6Ly9tdGEucXEuY29tLw==" title="https://mta.qq.com/">Tencent Mobile Analytics<i class="fa fa-external-link"></i></span>. <span class="exturl" data-url="aHR0cDovL2RvY3MuZGV2ZWxvcGVyLnFxLmNvbS9tdGEvcmVnaXN0ZXJfc3RhcnQuaHRtbA==" title="http://docs.developer.qq.com/mta/register_start.html">More detailed documentation<i class="fa fa-external-link"></i></span></li>
+<li>Edit <span class="label primary">theme config file</span> and fill section <code>tencent_mta</code>. <figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Tencent MTA ID</span></span><br><span class="line"><span class="attr">tencent_mta:</span> <span class="string">your-tencent-mta-id</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="CNZZ-Analytics-China"><a href="#CNZZ-Analytics-China" class="headerlink" title="CNZZ Analytics (China)"></a>CNZZ Analytics (China)</h4><ol>
+<li>Create an account and log into <span class="exturl" data-url="aHR0cDovL3d3dy51bWVuZy5jb20v" title="http://www.umeng.com/">CNZZ Analytics<i class="fa fa-external-link"></i></span>. <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIudW1lbmcuY29tL2RvY3MvNjc5NjMvZGV0YWlsLzY4NjA5" title="https://developer.umeng.com/docs/67963/detail/68609">More detailed documentation<i class="fa fa-external-link"></i></span></li>
+<li>Set the value of section <code>cnzz_siteid</code> in <span class="label primary">theme config file</span> to your CNZZ site ID. You can find this ID in link or the auto-generated script. <figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># CNZZ count</span></span><br><span class="line"><span class="comment">#cnzz_siteid:</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<div class="note warning">
+            <p>The script will show «Webmaster Statistics» and it&#39;s ugly, so I used a <code>display: none;</code> to hide it.</p>
+          </div>
+<h3 id="Counting-Tools"><a href="#Counting-Tools" class="headerlink" title="Counting Tools"></a>Counting Tools</h3><h4 id="Firebase"><a href="#Firebase" class="headerlink" title="Firebase"></a>Firebase</h4><p>Firebase Analytics provides the functionality of visitor statistics.</p>
+<div class="tabs" id="firestore"><ul class="nav-tabs"><li class="tab active"><a href="#firestore-1">Get apiKey & projectId →</a></li><li class="tab"><a href="#firestore-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="firestore-1"><p>Login to <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmZpcmViYXNlLmdvb2dsZS5jb20vdS8wLw==" title="https://console.firebase.google.com/u/0/">Firebase<i class="fa fa-external-link"></i></span> to get apiKey and projectId. <span class="exturl" data-url="aHR0cHM6Ly9maXJlYmFzZS5nb29nbGUuY29tL2RvY3MvZmlyZXN0b3JlLw==" title="https://firebase.google.com/docs/firestore/">More detailed documentation<i class="fa fa-external-link"></i></span></p></div><div class="tab-pane" id="firestore-2"><p>Edit <span class="label primary">theme config file</span> and add or change <code>firestore</code> section:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">firestore:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  collection:</span> <span class="string">articles</span> <span class="comment">#required, a string collection name to access firestore database</span></span><br><span class="line"><span class="attr">  apiKey:</span> <span class="comment">#required</span></span><br><span class="line"><span class="attr">  projectId:</span> <span class="comment">#required</span></span><br><span class="line"><span class="attr">  bluebird:</span> <span class="literal">false</span> <span class="comment">#enable this if you want to include bluebird 3.5.1(core version) Promise polyfill</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h4 id="Busuanzi-Counting-China"><a href="#Busuanzi-Counting-China" class="headerlink" title="Busuanzi Counting (China)"></a>Busuanzi Counting (China)</h4><div class="tabs" id="busuanzi-counting"><ul class="nav-tabs"><li class="tab active"><a href="#busuanzi-counting-1">Global Settings →</a></li><li class="tab"><a href="#busuanzi-counting-2">Site UV Settings →</a></li><li class="tab"><a href="#busuanzi-counting-3">Site PV Settings →</a></li><li class="tab"><a href="#busuanzi-counting-4">Per-page PV Settings</a></li></ul><div class="tab-content"><div class="tab-pane active" id="busuanzi-counting-1"><p>Edit <code>busuanzi_count</code> option in <span class="label primary">theme config file</span>.<br>When <code>enable: true</code>, global setting is enabled. If <code>site_uv</code>, <code>site_pv</code>, <code>page_pv</code> are all <code>false</code>, Busuanzi only counts but never shows.</p></div><div class="tab-pane" id="busuanzi-counting-2"><p>When <code>site_uv: true</code>, it will show site UV in footer.<br><code>site_uv_header</code> and <code>site_uv_footer</code> is custom style words, and you can hide it by leaving it blank. You can also use font-awesome, it looks like <code>[site_uv_header]UV count[site_uv_footer]</code>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># View: Site visited by 12345 people.</span></span><br><span class="line"><span class="attr">site_uv:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">site_uv_header:</span> <span class="string">Site</span> <span class="string">visited</span> <span class="string">by</span></span><br><span class="line"><span class="attr">site_uv_footer:</span> <span class="string">people.</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="busuanzi-counting-3"><p>When <code>site_pv: true</code>, it will show site PV in footer.<br><code>site_pv_header</code> and <code>site_pv_footer</code> is custom style words, and you can hide it by leaving it blank, you can also use font-awesome, it looks like <code>[site_pv_header]PV count[site_pv_footer]</code>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># View: Site visited by 12345 times.</span></span><br><span class="line"><span class="attr">site_pv:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">site_pv_header:</span> <span class="string">Site</span> <span class="string">visited</span> <span class="string">by</span></span><br><span class="line"><span class="attr">site_pv_footer:</span> <span class="string">times.</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="busuanzi-counting-4"><p>When <code>page_pv: true</code>, it will show page PV under post title.<br><code>page_pv_header</code> and <code>page_pv_footer</code> is custom style words, and you can hide it by leaving it blank, you can also use font-awesome, it looks like <code>[page_pv_header]PV count[page_pv_footer]</code>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># View: Post read by 12345 times.</span></span><br><span class="line"><span class="attr">page_pv:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">page_pv_header:</span> <span class="string">Post</span> <span class="string">read</span> <span class="string">by</span></span><br><span class="line"><span class="attr">page_pv_footer:</span> <span class="string">times.</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h4 id="LeanCloud-China"><a href="#LeanCloud-China" class="headerlink" title="LeanCloud (China)"></a>LeanCloud (China)</h4><p>Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1sZWFuY2xvdWQtY291bnRlci1zZWN1cml0eQ==" title="https://github.com/theme-next/hexo-leancloud-counter-security">hexo-leancloud-counter-security<i class="fa fa-external-link"></i></span>.</p>
+<div class="tabs" id="leancloud-counter"><ul class="nav-tabs"><li class="tab active"><a href="#leancloud-counter-1">Installation →</a></li><li class="tab"><a href="#leancloud-counter-2">Hexo Config →</a></li><li class="tab"><a href="#leancloud-counter-3">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="leancloud-counter-1"><p>Install <code>hexo-leancloud-counter-security</code> by run following command in <span class="label info">site root dir</span>:</p>
+<pre><code>$ npm install hexo-leancloud-counter-security --save
+</code></pre></div><div class="tab-pane" id="leancloud-counter-2"><p>Edit <span class="label info">site config file</span> and add following content:</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_counter_security:</span></span><br><span class="line"><span class="attr">  enable_sync:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  app_id:</span> <span class="string">&lt;&lt;your</span> <span class="string">app</span> <span class="string">id&gt;&gt;</span></span><br><span class="line"><span class="attr">  app_key:</span> <span class="string">&lt;&lt;your</span> <span class="string">app</span> <span class="string">key&gt;&gt;</span></span><br><span class="line"><span class="attr">  username:</span> <span class="string">&lt;&lt;your</span> <span class="string">username&gt;&gt;</span> <span class="comment"># Will be asked while deploying if is left blank</span></span><br><span class="line"><span class="attr">  password:</span> <span class="string">&lt;&lt;your</span> <span class="string">password&gt;&gt;</span> <span class="comment"># Recommmended to be left blank. Will be asked while deploying if is left blank</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="leancloud-counter-3"><p>Edit <span class="label primary">theme config file</span> and fill options under <code>leancloud_visitors</code> section.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show number of visitors to each article.</span></span><br><span class="line"><span class="comment"># You can visit https://leancloud.cn get AppID and AppKey.</span></span><br><span class="line"><span class="attr">leancloud_visitors:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  app_id:</span> <span class="comment">#&lt;app_id&gt;</span></span><br><span class="line"><span class="attr">  app_key:</span> <span class="comment">#&lt;app_key&gt;</span></span><br><span class="line">  <span class="comment"># Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security</span></span><br><span class="line">  <span class="comment"># If you don't care about security in lc counter and just want to use it directly</span></span><br><span class="line">  <span class="comment"># (without hexo-leancloud-counter-security plugin), set the `security` to `false`.</span></span><br><span class="line"><span class="attr">  security:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  betterPerformance:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></div></div></div>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+
+
+  
+  
+  <ul class="breadcrumb">
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/">DOCS</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/third-party-services/">THIRD-PARTY-SERVICES</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li>STATISTICS-AND-ANALYTICS</li>
+          
+        
+      
+    
+  </ul>
+
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/apple-touch-icon-next.png" alt="Coripple">
+            
+              <p class="site-author-name" itemprop="name">Coripple</p>
+              <div class="site-description motion-element" itemprop="description">Coripple's Blog</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvcmlwcGxl" title="GitHub &rarr; https://github.com/coripple"><i class="fa fa-fw fa-github"></i></span>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Analytics-Tools"><span class="nav-number">1.</span> <span class="nav-text">Analytics Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-Analytics"><span class="nav-number">1.1.</span> <span class="nav-text">Google Analytics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Azure-Application-Insights"><span class="nav-number">1.2.</span> <span class="nav-text">Azure Application Insights</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Baidu-Analytics-China"><span class="nav-number">1.3.</span> <span class="nav-text">Baidu Analytics (China)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Tencent-Analytics-China"><span class="nav-number">1.4.</span> <span class="nav-text">Tencent Analytics (China)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Tencent-Mobile-Analytics-China"><span class="nav-number">1.5.</span> <span class="nav-text">Tencent Mobile Analytics (China)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CNZZ-Analytics-China"><span class="nav-number">1.6.</span> <span class="nav-text">CNZZ Analytics (China)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Counting-Tools"><span class="nav-number">2.</span> <span class="nav-text">Counting Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Firebase"><span class="nav-number">2.1.</span> <span class="nav-text">Firebase</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Busuanzi-Counting-China"><span class="nav-number">2.2.</span> <span class="nav-text">Busuanzi Counting (China)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LeanCloud-China"><span class="nav-number">2.3.</span> <span class="nav-text">LeanCloud (China)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2014 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Coripple</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.1.2"></script>
+
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://viscode.com/docs/third-party-services/statistics-and-analytics.html";
+    this.page.identifier = "docs/third-party-services/statistics-and-analytics.html";
+    this.page.title = 'Statistics and Analytics';
+    this.language = 'en';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

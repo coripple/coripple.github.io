@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="yandex-verification" content="3ac9ae36ddebb425">
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"onmobile":true},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="NexT User Docs – NexT Supported Tags – Mermaid">
+<meta name="keywords" content="Coripple">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mermaid">
+<meta property="og:url" content="https://viscode.com/docs/tag-plugins/mermaid.html">
+<meta property="og:site_name" content="Coripple">
+<meta property="og:description" content="NexT User Docs – NexT Supported Tags – Mermaid">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-06-10T09:20:12.905Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mermaid">
+<meta name="twitter:description" content="NexT User Docs – NexT Supported Tags – Mermaid">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://viscode.com/docs/tag-plugins/mermaid">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Mermaid | Coripple</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Coripple</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Coripple's Blog</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-news">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-bullhorn"></i> <br>News</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">2</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+    
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">Mermaid<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGFnLXBsdWdpbnMvbWVybWFpZC5tZA==" title="Edit this post"><i class="fa fa-pencil"></i></span>
+
+</h2>
+
+<div class="post-meta">
+  
+    <div class="post-description">NexT User Docs – NexT Supported Tags – Mermaid</div>
+  
+  
+
+
+  
+  
+  <ul class="breadcrumb">
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/">DOCS</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/tag-plugins/">TAG-PLUGINS</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li>MERMAID</li>
+          
+        
+      
+    
+  </ul>
+
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h3 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h3><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line"><span class="attr">  theme:</span> <span class="string">forest</span></span><br><span class="line">  <span class="comment"># Use 8.0.0 as default, jsdelivr as default CDN, works everywhere even in China</span></span><br><span class="line"><span class="attr">  cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/mermaid@8.0.0/dist/mermaid.min.js</span></span><br><span class="line">  <span class="comment"># CDNJS, provided by cloudflare, maybe the best CDN, but not works in China</span></span><br><span class="line">  <span class="comment">#cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js</span></span><br></pre></td></tr></table></figure>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><figure class="highlight md"><figcaption><span>grouppicture.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% mermaid type %&#125;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br><span class="line"></span><br><span class="line">type : type of the mermaid chart, visit https://github.com/knsv/mermaid for more information.</span><br></pre></td></tr></table></figure>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">B --&gt; C&#123;Let me thinksssss<span class="xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span>ssssssssssssssssssssss<span class="xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span>sssssssssssssssssssssssssss&#125;</span><br><span class="line">C --&gt;|One| D[Laptop]</span><br><span class="line">C --&gt;|Two| E[iPhone]</span><br><span class="line">C --&gt;|Three| F[Car]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid graph LR %&#125;</span><br><span class="line">47(SAM.CommonFA.FMESummary)--&gt;48(SAM.CommonFA.CommonFAFinanceBudget)</span><br><span class="line">37(SAM.CommonFA.BudgetSubserviceLineVolume)--&gt;48(SAM.CommonFA.CommonFAFinanceBudget)</span><br><span class="line">35(SAM.CommonFA.PopulationFME)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">41(SAM.CommonFA.MetricCost)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">44(SAM.CommonFA.MetricOutliers)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">46(SAM.CommonFA.MetricOpportunity)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">40(SAM.CommonFA.OPVisits)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">38(SAM.CommonFA.CommonFAFinanceRefund)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">43(SAM.CommonFA.CommonFAFinancePicuDays)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">42(SAM.CommonFA.CommonFAFinanceNurseryDays)--&gt;47(SAM.CommonFA.FMESummary)</span><br><span class="line">45(SAM.CommonFA.MetricPreOpportunity)--&gt;46(SAM.CommonFA.MetricOpportunity)</span><br><span class="line">35(SAM.CommonFA.PopulationFME)--&gt;45(SAM.CommonFA.MetricPreOpportunity)</span><br><span class="line">41(SAM.CommonFA.MetricCost)--&gt;45(SAM.CommonFA.MetricPreOpportunity)</span><br><span class="line">41(SAM.CommonFA.MetricCost)--&gt;44(SAM.CommonFA.MetricOutliers)</span><br><span class="line">39(SAM.CommonFA.ChargeDetails)--&gt;43(SAM.CommonFA.CommonFAFinancePicuDays)</span><br><span class="line">39(SAM.CommonFA.ChargeDetails)--&gt;42(SAM.CommonFA.CommonFAFinanceNurseryDays)</span><br><span class="line">39(SAM.CommonFA.ChargeDetails)--&gt;41(SAM.CommonFA.MetricCost)</span><br><span class="line">39(SAM.CommonFA.ChargeDetails)--&gt;40(SAM.CommonFA.OPVisits)</span><br><span class="line">35(SAM.CommonFA.PopulationFME)--&gt;39(SAM.CommonFA.ChargeDetails)</span><br><span class="line">36(SAM.CommonFA.PremetricCost)--&gt;39(SAM.CommonFA.ChargeDetails)</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-creative-commons My System | Test Environment")</span><br><span class="line">82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs Shared Business Logic Server:Service 1")</span><br><span class="line">db052290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs Shared Business Logic Server:Service 2")</span><br><span class="line">4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs Shared Report Server:Service 1")</span><br><span class="line">30122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs Shared Report Server:Service 2")</span><br><span class="line">5e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs Dedicated Test Business Logic Server:Service 1")</span><br><span class="line">c1112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs Dedicated Test Business Logic Server:Service 2")</span><br><span class="line">b7042290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[SupportDb]")</span><br><span class="line">8f102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[DevelopmentDb]")</span><br><span class="line">0e102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[TestDb]")</span><br><span class="line">07132290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[SharedReportingDb]")</span><br><span class="line">c7072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server Shared Business Logic Server")</span><br><span class="line">ca122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server Shared Report Server")</span><br><span class="line">68102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server Dedicated Test Business Logic Server")</span><br><span class="line">f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-database [DBServer\SharedDbInstance]")</span><br><span class="line">d6072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server DBServer")</span><br><span class="line">71082290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs DBServer\:MSSQLSERVER")</span><br><span class="line">c0102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs DBServer\:SQLAgent")</span><br><span class="line">9a072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-cogs DBServer\:SQLBrowser")</span><br><span class="line">1d0a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server VmHost1")</span><br><span class="line">200a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server VmHost2")</span><br><span class="line">1c0a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002("fa:fa-server VmHost3")</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;db052290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;30122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;5e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9e122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;c1112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;b7042290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;8f102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;0e102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;c7072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">db052290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;c7072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">db052290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;82072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;b7042290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;8f102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;0e102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;07132290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;ca122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">30122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;ca122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">30122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;4e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">5e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;8f102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">5e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;68102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">c1112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;68102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">c1112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;5e112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">b7042290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">8f102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">0e102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">07132290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">c7072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;1d0a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">ca122290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;200a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">68102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;1c0a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;d6072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;71082290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;c0102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">f4112290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;9a072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">d6072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;1c0a2290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">71082290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;d6072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">c0102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;d6072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">c0102290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;71082290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9a072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;d6072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">9a072290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002--&gt;71082290<span class="emphasis">_1ec3_</span>e711<span class="emphasis">_8c5a_</span>005056ad0002</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid sequenceDiagram %&#125;</span><br><span class="line">participant Alice</span><br><span class="line">participant Bob</span><br><span class="line">participant John as John<span class="xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span>Second Line</span><br><span class="line">Alice -&gt;&gt; Bob: Hello Bob, how are you?</span><br><span class="line">Bob--&gt;&gt;John: How about you John?</span><br><span class="line">Bob--x Alice: I am good thanks!</span><br><span class="line">Bob-x John: I am good thanks!</span><br><span class="line">Note right of John: Bob thinks a long<span class="xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span>long time, so long<span class="xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span>that the text does<span class="xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span>not fit on a row.</span><br><span class="line">Bob--&gt;Alice: Checking with John...</span><br><span class="line">alt either this</span><br><span class="line">Alice-&gt;&gt;John: Yes</span><br><span class="line">else or this</span><br><span class="line">Alice-&gt;&gt;John: No</span><br><span class="line">else or this will happen</span><br><span class="line">Alice-&gt;John: Maybe</span><br><span class="line">end</span><br><span class="line">par this happens in parallel</span><br><span class="line">Alice --&gt;&gt; Bob: Parallel message 1</span><br><span class="line">and</span><br><span class="line">Alice --&gt;&gt; John: Parallel message 2</span><br><span class="line">end</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid gantt %&#125;</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">axisFormat  %d/%m</span><br><span class="line">title Adding GANTT diagram to mermaid</span><br><span class="line"></span><br><span class="line">section A section</span><br><span class="line">Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">Future task               :         des3, after des2, 5d</span><br><span class="line">Future task2               :         des4, after des3, 5d</span><br><span class="line"></span><br><span class="line">section Critical tasks</span><br><span class="line">Completed task in the critical line :crit, done, 2014-01-06,24h</span><br><span class="line">Implement parser and jison          :crit, done, after des1, 2d</span><br><span class="line">Create tests for parser             :crit, active, 3d</span><br><span class="line">Future task in critical line        :crit, 5d</span><br><span class="line">Create tests for renderer           :2d</span><br><span class="line">Add to mermaid                      :1d</span><br><span class="line"></span><br><span class="line">section Documentation</span><br><span class="line">Describe gantt syntax               :active, a1, after des1, 3d</span><br><span class="line">Add gantt diagram to demo page      :after a1  , 20h</span><br><span class="line">Add another diagram to demo page    :doc1, after a1  , 48h</span><br><span class="line"></span><br><span class="line">section Last section</span><br><span class="line">Describe gantt syntax               :after doc1, 3d</span><br><span class="line">Add gantt diagram to demo page      : 20h</span><br><span class="line">Add another diagram to demo page    : 48h</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid gitGraph: %&#125;</span><br><span class="line">options</span><br><span class="line">&#123;</span><br><span class="line"><span class="code">    "nodeSpacing": 150,</span></span><br><span class="line"><span class="code">    "nodeRadius": 10</span></span><br><span class="line">&#125;</span><br><span class="line">end</span><br><span class="line">commit</span><br><span class="line">branch newbranch</span><br><span class="line">checkout newbranch</span><br><span class="line">commit</span><br><span class="line">commit</span><br><span class="line">checkout master</span><br><span class="line">commit</span><br><span class="line">commit</span><br><span class="line">merge newbranch</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+
+
+  
+  
+  <ul class="breadcrumb">
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/">DOCS</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li><a href="/docs/tag-plugins/">TAG-PLUGINS</a></li>
+          
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          
+            <li>MERMAID</li>
+          
+        
+      
+    
+  </ul>
+
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/apple-touch-icon-next.png" alt="Coripple">
+            
+              <p class="site-author-name" itemprop="name">Coripple</p>
+              <div class="site-description motion-element" itemprop="description">Coripple's Blog</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvcmlwcGxl" title="GitHub &rarr; https://github.com/coripple"><i class="fa fa-fw fa-github"></i></span>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Settings"><span class="nav-number">1.</span> <span class="nav-text">Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usage"><span class="nav-number">2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">3.</span> <span class="nav-text">Examples</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2014 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Coripple</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.1.2"></script>
+
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://viscode.com/docs/tag-plugins/mermaid.html";
+    this.page.identifier = "docs/tag-plugins/mermaid.html";
+    this.page.title = 'Mermaid';
+    this.language = 'en';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
