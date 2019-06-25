@@ -3,7 +3,10 @@
   <entry>
     <title><![CDATA[Git 开发流程]]></title>
     <url>%2Fpub%2FGit-%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[Git 开发流程获取repositorygit clone https://github.com/coripple/test 创建branchgit branch branch1git checkout branch1 提交mergerequestgit add -Agit commit -m&quot;add new change&quot;git push branch1 branch1]]></content>
+    <content type="text"><![CDATA[Git 开发流程获取repositorygit clone https://github.com/coripple/test 创建branchgit branch branch1git checkout branch1 提交mergerequestgit pull --rebasegit add -Agit commit -m&quot;add new change&quot;git push branch1 branch1]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
       <tags>
         <tag>Git</tag>
       </tags>
