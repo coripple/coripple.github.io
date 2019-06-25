@@ -40,7 +40,9 @@
 
   
   
-  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
 
 
 
@@ -397,7 +399,7 @@
       <div class="post-body">
         
         
-          <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><figure class="highlight md"><figcaption><span>button.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% button url, text, icon [class], [title] %&#125;</span><br><span class="line">&lt;!-- Tag Alias --&gt;</span><br><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br><span class="line"></span><br><span class="line">url     : Absolute or relative path to URL.</span><br><span class="line">text    : Button text. Required if no icon specified.</span><br><span class="line">icon    : FontAwesome icon name (without 'fa-' at the begining). Required if no text specified.</span><br><span class="line">[class] : FontAwesome class(es): fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br><span class="line"><span class="code">          Optional parameter.</span></span><br><span class="line">[title] : Tooltip at mouseover.</span><br><span class="line"><span class="code">          Optional parameter.</span></span><br></pre></td></tr></table></figure>
+          <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><figure class="highlight md"><figcaption><span>button.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% button url, text, icon [class], [title] %&#125;</span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- Tag Alias --&gt;</span></span></span><br><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br><span class="line"></span><br><span class="line">url     : Absolute or relative path to URL.</span><br><span class="line">text    : Button text. Required if no icon specified.</span><br><span class="line">icon    : FontAwesome icon name (without 'fa-' at the begining). Required if no text specified.</span><br><span class="line">[class] : FontAwesome class(es): fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br><span class="line"><span class="code">          Optional parameter.</span></span><br><span class="line">[title] : Tooltip at mouseover.</span><br><span class="line"><span class="code">          Optional parameter.</span></span><br></pre></td></tr></table></figure>
 <h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% button #, Text %&#125;</span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">Text</a>
 <h4 id="Button-with-text-amp-title"><a href="#Button-with-text-amp-title" class="headerlink" title="Button with text &amp; title"></a>Button with text &amp; title</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% btn #, Text %&#125;&#123;% btn #, Text &amp; Title,, Title %&#125;</span><br></pre></td></tr></table></figure>
@@ -407,7 +409,7 @@
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% btn #, Text %&#125;</span><br><span class="line">&#123;% btn #, Text &amp; Title,, Title %&#125;</span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">Text</a>
 <a class="btn" href="#" title="Title">Text & Title</a>
-<h4 id="Button-with-icon"><a href="#Button-with-icon" class="headerlink" title="Button with icon"></a>Button with icon</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&#123;% btn #,, home fa-5x %&#125;&#123;% btn #,, home fa-5x %&#125;&#123;% btn #,, home fa-5x %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, home fa-4x %&#125;&#123;% btn #,, home fa-4x %&#125;&#123;% btn #,, home fa-4x %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, home fa-3x %&#125;&#123;% btn #,, home fa-3x %&#125;&#123;% btn #,, home fa-3x %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, home fa-2x %&#125;&#123;% btn #,, home fa-2x %&#125;&#123;% btn #,, home fa-2x %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, home fa-lg %&#125;&#123;% btn #,, home fa-lg %&#125;&#123;% btn #,, home fa-lg %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, home %&#125;&#123;% btn #,, home %&#125;&#123;% btn #,, home %&#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Button-with-icon"><a href="#Button-with-icon" class="headerlink" title="Button with icon"></a>Button with icon</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, home fa-5x %&#125;&#123;% btn #,, home fa-5x %&#125;&#123;% btn #,, home fa-5x %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, home fa-4x %&#125;&#123;% btn #,, home fa-4x %&#125;&#123;% btn #,, home fa-4x %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, home fa-3x %&#125;&#123;% btn #,, home fa-3x %&#125;&#123;% btn #,, home fa-3x %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, home fa-2x %&#125;&#123;% btn #,, home fa-2x %&#125;&#123;% btn #,, home fa-2x %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, home fa-lg %&#125;&#123;% btn #,, home fa-lg %&#125;&#123;% btn #,, home fa-lg %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, home %&#125;&#123;% btn #,, home %&#125;&#123;% btn #,, home %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <div><a class="btn" href="#"><i class="fa fa-home fa-5x"></i></a><a class="btn" href="#"><i class="fa fa-home fa-5x"></i></a><a class="btn" href="#"><i class="fa fa-home fa-5x"></i></a></div>
 <div><a class="btn" href="#"><i class="fa fa-home fa-4x"></i></a><a class="btn" href="#"><i class="fa fa-home fa-4x"></i></a><a class="btn" href="#"><i class="fa fa-home fa-4x"></i></a></div>
 <div><a class="btn" href="#"><i class="fa fa-home fa-3x"></i></a><a class="btn" href="#"><i class="fa fa-home fa-3x"></i></a><a class="btn" href="#"><i class="fa fa-home fa-3x"></i></a></div>
@@ -415,11 +417,11 @@
 <div><a class="btn" href="#"><i class="fa fa-home fa-lg"></i></a><a class="btn" href="#"><i class="fa fa-home fa-lg"></i></a><a class="btn" href="#"><i class="fa fa-home fa-lg"></i></a></div>
 <div><a class="btn" href="#"><i class="fa fa-home"></i></a><a class="btn" href="#"><i class="fa fa-home"></i></a><a class="btn" href="#"><i class="fa fa-home"></i></a></div>
 
-<h4 id="Button-with-text-amp-icon"><a href="#Button-with-text-amp-icon" class="headerlink" title="Button with text &amp; icon"></a>Button with text &amp; icon</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;&#123;% btn #, Text &amp; Icon (buggy), home %&#125;</span><br><span class="line">&#123;% btn #, Text &amp; Icon (fixed width), home fa-fw %&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Button-with-text-amp-icon"><a href="#Button-with-text-amp-icon" class="headerlink" title="Button with text &amp; icon"></a>Button with text &amp; icon</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>&#123;% btn #, Text &amp; Icon (buggy), home %&#125;</span><br><span class="line">&#123;% btn #, Text &amp; Icon (fixed width), home fa-fw %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p><a class="btn" href="#"><i class="fa fa-home"></i>Text & Icon (buggy)</a>
 <a class="btn" href="#"><i class="fa fa-home fa-fw"></i>Text & Icon (fixed width)</a></p>
 
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;&#123;% btn #, Text &amp; Large Icon, home fa-fw fa-lg %&#125;</span><br><span class="line">&#123;% btn #, Text &amp; Large Icon &amp; Title, home fa-fw fa-lg, Title %&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>&#123;% btn #, Text &amp; Large Icon, home fa-fw fa-lg %&#125;</span><br><span class="line">&#123;% btn #, Text &amp; Large Icon &amp; Title, home fa-fw fa-lg, Title %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p><a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>Text & Large Icon</a>
 <a class="btn" href="#" title="Title"><i class="fa fa-home fa-fw fa-lg"></i>Text & Large Icon & Title</a></p>
 
@@ -429,15 +431,15 @@
 <div class="note info">
             <p><a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>Text &amp; Icon</a></p><p><a class="btn" href="#" title="Title"><i class="fa fa-home fa-lg"></i></a><a class="btn" href="#">Text</a><br><a href="#">Link</a></p>
           </div>
-<h4 id="Button-margin"><a href="#Button-margin" class="headerlink" title="Button margin"></a>Button margin</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&lt;div class="text-center"&gt;&lt;div&gt;&#123;% btn #,, header %&#125;&#123;% btn #,, edge %&#125;&#123;% btn #,, times %&#125;&#123;% btn #,, circle-o %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, italic %&#125;&#123;% btn #,, scribd %&#125;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&#123;% btn #,, google %&#125;&#123;% btn #,, chrome %&#125;&#123;% btn #,, opera %&#125;&#123;% btn #,, diamond fa-rotate-270 %&#125;&lt;/div&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Button-margin"><a href="#Button-margin" class="headerlink" title="Button margin"></a>Button margin</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text-center"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, header %&#125;&#123;% btn #,, edge %&#125;&#123;% btn #,, times %&#125;&#123;% btn #,, circle-o %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, italic %&#125;&#123;% btn #,, scribd %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span>&#123;% btn #,, google %&#125;&#123;% btn #,, chrome %&#125;&#123;% btn #,, opera %&#125;&#123;% btn #,, diamond fa-rotate-270 %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <div class="text-center"><div><a class="btn" href="#"><i class="fa fa-header"></i></a><a class="btn" href="#"><i class="fa fa-edge"></i></a><a class="btn" href="#"><i class="fa fa-times"></i></a><a class="btn" href="#"><i class="fa fa-circle-o"></i></a></div>
 <div><a class="btn" href="#"><i class="fa fa-italic"></i></a><a class="btn" href="#"><i class="fa fa-scribd"></i></a></div>
 <div><a class="btn" href="#"><i class="fa fa-google"></i></a><a class="btn" href="#"><i class="fa fa-chrome"></i></a><a class="btn" href="#"><i class="fa fa-opera"></i></a><a class="btn" href="#"><i class="fa fa-diamond fa-rotate-270"></i></a></div></div>
 
-<h4 id="Button-with-relative-URL"><a href="#Button-with-relative-URL" class="headerlink" title="Button with relative URL"></a>Button with relative URL</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&lt;div class="text-center"&gt;&#123;% btn #, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %&#125; &#123;% btn #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %&#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Button-with-relative-URL"><a href="#Button-with-relative-URL" class="headerlink" title="Button with relative URL"></a>Button with relative URL</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text-center"</span>&gt;</span></span>&#123;% btn #, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %&#125; &#123;% btn #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <div class="text-center"><a class="btn" href="/docs/tag-plugins/full-image" title="Previous Chapter (Full Image)"><i class="fa fa-arrow-left fa-fw fa-lg"></i>Previous Chapter</a> <a class="btn" href="/docs/tag-plugins/label" title="Next Chapter (Label)"><i class="fa fa-arrow-right fa-fw fa-lg"></i>Next Chapter</a></div>
 
-<h4 id="Button-with-absolute-URL"><a href="#Button-with-absolute-URL" class="headerlink" title="Button with absolute URL"></a>Button with absolute URL</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&lt;div class="text-center"&gt;&#123;% btn https://github.com/theme-next/hexo-theme-next, NexT, github fa-fw fa-lg, NexT source code %&#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Button-with-absolute-URL"><a href="#Button-with-absolute-URL" class="headerlink" title="Button with absolute URL"></a>Button with absolute URL</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text-center"</span>&gt;</span></span>&#123;% btn https://github.com/theme-next/hexo-theme-next, NexT, github fa-fw fa-lg, NexT source code %&#125;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <div class="text-center"><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="NexT source code"><i class="fa fa-github fa-fw fa-lg"></i>NexT<i class="fa fa-external-link"></i></span></div>
 
         
@@ -503,9 +505,9 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
+      
+        <div id="gitment-container"></div>
+      
     </div>
 
   
@@ -578,8 +580,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
@@ -596,8 +596,6 @@
                     
                   
                     
-                    
-                      
                     
                       
                     
@@ -777,7 +775,7 @@
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 
 
   
@@ -821,57 +819,6 @@
   
 
   
-  
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theme-next.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
-
-
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://viscode.com/docs/tag-plugins/button.html";
-    this.page.identifier = "docs/tag-plugins/button.html";
-    this.page.title = 'Button';
-    this.language = 'en';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theme-next.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    $(function() {
-      var offsetTop = $('#comments').offset().top - $(window).height();
-      if (offsetTop <= 0) {
-        // load directly when there's no a scrollbar
-        window.addEventListener('load', loadComments, false);
-      } else {
-        $(window).on('scroll.disqus_scroll', function() {
-          // offsetTop may changes because of manually resizing browser window or lazy loading images.
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          var scrollTop = $(window).scrollTop();
-
-          // pre-load comments a bit? (margin or anything else)
-          if (offsetTop - scrollTop < 60) {
-            $(window).off('.disqus_scroll');
-            loadComments();
-          }
-        });
-      }
-    });
-  
-</script>
-
-
-
 
 
   

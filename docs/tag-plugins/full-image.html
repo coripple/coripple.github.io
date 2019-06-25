@@ -40,7 +40,9 @@
 
   
   
-  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
 
 
 
@@ -407,7 +409,7 @@
 <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><div class="note warning">
             <p>From version <span class="label primary">6.4.0</span> this tag supported 2 additional parameters:</p><ul><li>Lazy load → <code>lazy</code></li><li>Image size → <code>size</code></li></ul><p>If you are using a lower version, this parameters will be ignored.</p>
           </div>
-<figure class="highlight md"><figcaption><span>full-image.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% fullimage /url [@lazy], [alt], [title], [size] %&#125;</span><br><span class="line">&lt;!-- Tag Alias --&gt;</span><br><span class="line">&#123;% fi /url [@lazy], [alt], [title], [size] %&#125;</span><br><span class="line"></span><br><span class="line">/url    : Relative path to image URL.</span><br><span class="line">[@lazy] : Load image only when user scroll to it.</span><br><span class="line"><span class="code">          Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload</span></span><br><span class="line">[alt]   : Alternate text (for search engines).</span><br><span class="line">[title] : Tooltip at mouseover.</span><br><span class="line">[size]  : Size of image in any ratio (%, px, em).</span><br><span class="line"></span><br><span class="line">All parameters except /url are optional.</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><figcaption><span>full-image.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% fullimage /url [@lazy], [alt], [title], [size] %&#125;</span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- Tag Alias --&gt;</span></span></span><br><span class="line">&#123;% fi /url [@lazy], [alt], [title], [size] %&#125;</span><br><span class="line"></span><br><span class="line">/url    : Relative path to image URL.</span><br><span class="line">[@lazy] : Load image only when user scroll to it.</span><br><span class="line"><span class="code">          Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload</span></span><br><span class="line">[alt]   : Alternate text (for search engines).</span><br><span class="line">[title] : Tooltip at mouseover.</span><br><span class="line">[size]  : Size of image in any ratio (%, px, em).</span><br><span class="line"></span><br><span class="line">All parameters except /url are optional.</span><br></pre></td></tr></table></figure>
 <h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/github.png %&#125;</span><br></pre></td></tr></table></figure>
 <span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/docs/github.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <h4 id="Full-Image-with-alt-amp-title"><a href="#Full-Image-with-alt-amp-title" class="headerlink" title="Full Image with alt &amp; title"></a>Full Image with alt &amp; title</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/github.png, Alt text, Title text %&#125;</span><br></pre></td></tr></table></figure>
@@ -419,7 +421,7 @@
 <div class="note info">
             <p>Recommended to use this tag once per article.</p>
           </div>
-<h4 id="Lazy-loading-Full-Image"><a href="#Lazy-loading-Full-Image" class="headerlink" title="Lazy loading Full Image"></a>Lazy loading Full Image</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/next-schemes-3.png@lazy, Alt text, Title text, 75% %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- Or with space before '@lazy' --&gt;</span><br><span class="line"></span><br><span class="line">&#123;% fi /images/docs/next-schemes-3.png @lazy, Alt text, Title text, 75% %&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Lazy-loading-Full-Image"><a href="#Lazy-loading-Full-Image" class="headerlink" title="Lazy loading Full Image"></a>Lazy loading Full Image</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/next-schemes-3.png@lazy, Alt text, Title text, 75% %&#125;</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- Or with space before '@lazy' --&gt;</span></span></span><br><span class="line"></span><br><span class="line">&#123;% fi /images/docs/next-schemes-3.png @lazy, Alt text, Title text, 75% %&#125;</span><br></pre></td></tr></table></figure>
 <span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/loading.gif" data-original="/images/docs/next-schemes-3.png " class="full-image" alt="Alt text" title="Title text" style="max-width: none; width: 75%;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
         
       </div>
@@ -484,9 +486,9 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
+      
+        <div id="gitment-container"></div>
+      
     </div>
 
   
@@ -559,8 +561,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
@@ -577,8 +577,6 @@
                     
                   
                     
-                    
-                      
                     
                       
                     
@@ -758,7 +756,7 @@
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 
 
   
@@ -802,57 +800,6 @@
   
 
   
-  
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theme-next.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
-
-
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://viscode.com/docs/tag-plugins/full-image.html";
-    this.page.identifier = "docs/tag-plugins/full-image.html";
-    this.page.title = 'Full Image (Featured Image)';
-    this.language = 'en';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theme-next.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    $(function() {
-      var offsetTop = $('#comments').offset().top - $(window).height();
-      if (offsetTop <= 0) {
-        // load directly when there's no a scrollbar
-        window.addEventListener('load', loadComments, false);
-      } else {
-        $(window).on('scroll.disqus_scroll', function() {
-          // offsetTop may changes because of manually resizing browser window or lazy loading images.
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          var scrollTop = $(window).scrollTop();
-
-          // pre-load comments a bit? (margin or anything else)
-          if (offsetTop - scrollTop < 60) {
-            $(window).off('.disqus_scroll');
-            loadComments();
-          }
-        });
-      }
-    });
-  
-</script>
-
-
-
 
 
   
