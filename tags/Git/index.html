@@ -100,24 +100,14 @@
 
 
 
-  <meta name="description" content="NexT User Docs – NexT Supported Tags – Full Image">
-<meta name="keywords" content="Coripple">
+  <meta name="keywords" content="Coripple">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Full Image (Featured Image)">
-<meta property="og:url" content="https://viscode.com/docs/tag-plugins/full-image.html">
+<meta property="og:title" content="Coripple">
+<meta property="og:url" content="https://viscode.com/tags/Git/index.html">
 <meta property="og:site_name" content="Coripple">
-<meta property="og:description" content="NexT User Docs – NexT Supported Tags – Full Image">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://viscode.com/images/docs/github.png">
-<meta property="og:image" content="https://viscode.com/images/docs/github.png">
-<meta property="og:image" content="https://viscode.com/images/docs/github.png">
-<meta property="og:image" content="https://viscode.com/images/docs/github.png">
-<meta property="og:image" content="https://viscode.com/images/loading.gif">
-<meta property="og:updated_time" content="2019-06-10T09:20:12.901Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Full Image (Featured Image)">
-<meta name="twitter:description" content="NexT User Docs – NexT Supported Tags – Full Image">
-<meta name="twitter:image" content="https://viscode.com/images/docs/github.png">
+<meta name="twitter:title" content="Coripple">
 
 
 
@@ -125,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://viscode.com/docs/tag-plugins/full-image">
+  <link rel="canonical" href="https://viscode.com/tags/Git/">
 
 
 
@@ -135,7 +125,7 @@
   };
 </script>
 
-  <title>Full Image (Featured Image) | Coripple</title>
+  <title>Tag: Git | Coripple</title>
   
 
 
@@ -181,7 +171,7 @@
   
   
 
-  <div class="container page-post-detail">
+  <div class="container ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -332,166 +322,57 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
-
-<h2 class="post-title" itemprop="name headline">Full Image (Featured Image)<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGFnLXBsdWdpbnMvZnVsbC1pbWFnZS5tZA==" title="Edit this post"><i class="fa fa-pencil"></i></span>
-
-</h2>
-
-<div class="post-meta">
-  
-    <div class="post-description">NexT User Docs – NexT Supported Tags – Full Image</div>
   
   
-
-
   
-  
-  <ul class="breadcrumb">
-    
-      
-      
-        
-          
-            
-          
-          
-            <li><a href="/docs/">DOCS</a></li>
-          
-        
-      
-    
-      
-      
-        
-          
-            
-          
-          
-            <li><a href="/docs/tag-plugins/">TAG-PLUGINS</a></li>
-          
-        
-      
-    
-      
-      
-        
-          
-            
-          
-          
-            <li>FULL-IMAGE</li>
-          
-        
-      
-    
-  </ul>
+  <div class="post-block tag">
 
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          <p>Using this tag will add meta data <code>ImageObject</code> to make your image featured. It&#39;s mean search engines/social services will display your article in their services with this image as thumbnail by default.</p>
-<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><div class="note warning">
-            <p>From version <span class="label primary">6.4.0</span> this tag supported 2 additional parameters:</p><ul><li>Lazy load → <code>lazy</code></li><li>Image size → <code>size</code></li></ul><p>If you are using a lower version, this parameters will be ignored.</p>
-          </div>
-<figure class="highlight md"><figcaption><span>full-image.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% fullimage /url [@lazy], [alt], [title], [size] %&#125;</span><br><span class="line">&lt;!-- Tag Alias --&gt;</span><br><span class="line">&#123;% fi /url [@lazy], [alt], [title], [size] %&#125;</span><br><span class="line"></span><br><span class="line">/url    : Relative path to image URL.</span><br><span class="line">[@lazy] : Load image only when user scroll to it.</span><br><span class="line"><span class="code">          Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload</span></span><br><span class="line">[alt]   : Alternate text (for search engines).</span><br><span class="line">[title] : Tooltip at mouseover.</span><br><span class="line">[size]  : Size of image in any ratio (%, px, em).</span><br><span class="line"></span><br><span class="line">All parameters except /url are optional.</span><br></pre></td></tr></table></figure>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/github.png %&#125;</span><br></pre></td></tr></table></figure>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/docs/github.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<h4 id="Full-Image-with-alt-amp-title"><a href="#Full-Image-with-alt-amp-title" class="headerlink" title="Full Image with alt &amp; title"></a>Full Image with alt &amp; title</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/github.png, Alt text, Title text %&#125;</span><br></pre></td></tr></table></figure>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/docs/github.png" class="full-image" alt="Alt text" title="Title text"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<h4 id="Full-Image-with-100-size"><a href="#Full-Image-with-100-size" class="headerlink" title="Full Image with 100% size"></a>Full Image with 100% size</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/github.png, Alt text, Title text, 100% %&#125;</span><br></pre></td></tr></table></figure>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/docs/github.png" class="full-image" alt="Alt text" title="Title text" style="max-width: none; width: 100%;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<h4 id="Full-Image-with-200px-amp-without-alt-amp-title"><a href="#Full-Image-with-200px-amp-without-alt-amp-title" class="headerlink" title="Full Image with 200px &amp; without alt &amp; title"></a>Full Image with 200px &amp; without alt &amp; title</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/github.png,,, 200px %&#125;</span><br></pre></td></tr></table></figure>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/docs/github.png" class="full-image" style="max-width: none; width: 200px;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<div class="note info">
-            <p>Recommended to use this tag once per article.</p>
-          </div>
-<h4 id="Lazy-loading-Full-Image"><a href="#Lazy-loading-Full-Image" class="headerlink" title="Lazy loading Full Image"></a>Lazy loading Full Image</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% fi /images/docs/next-schemes-3.png@lazy, Alt text, Title text, 75% %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- Or with space before '@lazy' --&gt;</span><br><span class="line"></span><br><span class="line">&#123;% fi /images/docs/next-schemes-3.png @lazy, Alt text, Title text, 75% %&#125;</span><br></pre></td></tr></table></figure>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/loading.gif" data-original="/images/docs/next-schemes-3.png " class="full-image" alt="Alt text" title="Title text" style="max-width: none; width: 75%;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-        
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h2>Git<small>Tag</small>
+        </h2>
       </div>
+
       
-      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
+          <a class="post-title-link" href="/pub/Git-开发流程/" itemprop="url">
+            
+              <span itemprop="name">Git 开发流程</span>
+            
+          </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-25T10:10:13Z" content="2019-06-25">
+          06-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
 
-
-  
-  
-  <ul class="breadcrumb">
-    
-      
-      
-        
-          
-            
-          
-          
-            <li><a href="/docs/">DOCS</a></li>
-          
-        
-      
-    
-      
-      
-        
-          
-            
-          
-          
-            <li><a href="/docs/tag-plugins/">TAG-PLUGINS</a></li>
-          
-        
-      
-    
-      
-      
-        
-          
-            
-          
-          
-            <li>FULL-IMAGE</li>
-          
-        
-      
-    
-  </ul>
-
-
-    
-    
-    
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -511,17 +392,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -620,23 +492,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Usage"><span class="nav-number">1.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Full-Image-with-alt-amp-title"><span class="nav-number">2.1.</span> <span class="nav-text">Full Image with alt &amp; title</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Full-Image-with-100-size"><span class="nav-number">2.2.</span> <span class="nav-text">Full Image with 100% size</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Full-Image-with-200px-amp-without-alt-amp-title"><span class="nav-number">2.3.</span> <span class="nav-text">Full Image with 200px &amp; without alt &amp; title</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Lazy-loading-Full-Image"><span class="nav-number">2.4.</span> <span class="nav-text">Lazy loading Full Image</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -776,10 +631,6 @@
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.2"></script>
-<script src="/js/post-details.js?v=7.1.2"></script>
-
-
 
   
 
@@ -809,47 +660,9 @@
 </script>
 
 
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://viscode.com/docs/tag-plugins/full-image.html";
-    this.page.identifier = "docs/tag-plugins/full-image.html";
-    this.page.title = 'Full Image (Featured Image)';
-    this.language = 'en';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theme-next.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    $(function() {
-      var offsetTop = $('#comments').offset().top - $(window).height();
-      if (offsetTop <= 0) {
-        // load directly when there's no a scrollbar
-        window.addEventListener('load', loadComments, false);
-      } else {
-        $(window).on('scroll.disqus_scroll', function() {
-          // offsetTop may changes because of manually resizing browser window or lazy loading images.
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          var scrollTop = $(window).scrollTop();
-
-          // pre-load comments a bit? (margin or anything else)
-          if (offsetTop - scrollTop < 60) {
-            $(window).off('.disqus_scroll');
-            loadComments();
-          }
-        });
-      }
-    });
-  
-</script>
 
 
 
-
-
-  
 
 
   
