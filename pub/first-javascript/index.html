@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="计算器评估:     结果:        $(&apos;#evalute&apos;).click(function () {       var jqueryTestId = document.getElementById(&apos;result&apos;);       var date = new Date();       var price=704;       var evalutePriceText = $(&apos;#l">
+  <meta name="description" content="code&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;评估:&amp;lt;/span&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;localInput&amp;quot; style=&amp;quot;width: 200px;&amp;quot; results=&amp;quot;0&amp;quot; value=3000000 /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;l">
 <meta name="keywords" content="Coripple">
 <meta property="og:type" content="article">
 <meta property="og:title" content="first-javascript">
 <meta property="og:url" content="https://viscode.com/pub/first-javascript/index.html">
 <meta property="og:site_name" content="Coripple">
-<meta property="og:description" content="计算器评估:     结果:        $(&apos;#evalute&apos;).click(function () {       var jqueryTestId = document.getElementById(&apos;result&apos;);       var date = new Date();       var price=704;       var evalutePriceText = $(&apos;#l">
+<meta property="og:description" content="code&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;评估:&amp;lt;/span&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;localInput&amp;quot; style=&amp;quot;width: 200px;&amp;quot; results=&amp;quot;0&amp;quot; value=3000000 /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;l">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-14T04:21:48.109Z">
+<meta property="og:updated_time" content="2019-08-14T04:46:57.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="first-javascript">
-<meta name="twitter:description" content="计算器评估:     结果:        $(&apos;#evalute&apos;).click(function () {       var jqueryTestId = document.getElementById(&apos;result&apos;);       var date = new Date();       var price=704;       var evalutePriceText = $(&apos;#l">
+<meta name="twitter:description" content="code&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;评估:&amp;lt;/span&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;localInput&amp;quot; style=&amp;quot;width: 200px;&amp;quot; results=&amp;quot;0&amp;quot; value=3000000 /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;l">
 
 
 
@@ -374,7 +374,7 @@
                 
               
 
-              <time title="Created: 2019-08-14 10:07:50 / Modified: 04:21:48" itemprop="dateCreated datePublished" datetime="2019-08-14T10:07:50Z">2019-08-14</time>
+              <time title="Created: 2019-08-14 10:07:50 / Modified: 04:46:57" itemprop="dateCreated datePublished" datetime="2019-08-14T10:07:50Z">2019-08-14</time>
             
 
             
@@ -413,7 +413,8 @@
       
 
       
-        <h1 id="计算器"><a href="#计算器" class="headerlink" title="计算器"></a>计算器</h1><div><span>评估:</span> <input type="text" id="localInput" style="width: 200px;" results="0" value="3000000"></div>
+        <h1 id="code"><a href="#code" class="headerlink" title="code"></a>code</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&lt;span&gt;评估:&lt;/span&gt; &lt;input type=&quot;text&quot; id=&quot;localInput&quot; style=&quot;width: 200px;&quot; results=&quot;0&quot; value=3000000 /&gt;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&lt;input id=&quot;evalute&quot; type=&quot;button&quot; value=&quot;估算&quot;&gt;&lt;/input&gt;&lt;/div&gt;</span><br><span class="line">&lt;div&gt;&lt;pre&gt;&lt;span id=&quot;result&quot;&gt;结果:&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    $(&apos;#evalute&apos;).click(function () &#123;</span><br><span class="line">      var jqueryTestId = document.getElementById(&apos;result&apos;);</span><br><span class="line">      jqueryTestId.innerHTML = $(&apos;#localInput&apos;).val();</span><br><span class="line">      &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><div><span>评估:</span> <input type="text" id="localInput" style="width: 200px;" results="0" value="3000000"></div>
 
 <div><input id="evalute" type="button" value="估算"></div>
 
@@ -429,7 +430,10 @@
       var evalutePrice = evalutePriceText * 1.0;
       var sign = 0
       if (evalutePrice <= 750 && evalutePrice >= 500) sign = 1;
-      if (sign == 0) return;
+      if (sign == 0) {
+        jqueryTestId.innerHTML = $('#localInput').val();
+        return;
+      }
       var tax = evalutePrice * 0.03;
       var agent = price * 0.026;
       var loan = evalutePrice * 0.4;
@@ -712,7 +716,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#计算器"><span class="nav-number">1.</span> <span class="nav-text">计算器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#code"><span class="nav-number">1.</span> <span class="nav-text">code</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#test"><span class="nav-number">2.</span> <span class="nav-text">test</span></a></li></ol></div>
             
 
           </div>
